@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#140e14"/><stop offset=".55" stop-color="#4a1d27"/><stop offset="1" stop-color="#1a0f13"/></linearGradient>
+    <radialGradient id="moon" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#f0c7b0"/><stop offset="1" stop-color="#a5464a"/></radialGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+  <circle cx="290" cy="80" r="40" fill="url(#moon)" opacity=".85"/>
+  <!-- арена -->
+  <path d="M0 260 V190 Q200 150 400 190 V260Z" fill="#120b0e"/>
+  <g fill="#0b080a">
+    <path d="M20 196 V150 H40 V196Z M70 182 V138 H90 V182Z M310 182 V138 H330 V182Z M360 196 V150 H380 V196Z"/>
+    <path d="M40 160 Q55 146 70 156 V182 H40Z M330 156 Q345 146 360 160 V196 H330Z"/>
+  </g>
+  <g fill="#e2a066" opacity=".7"><rect x="28" y="160" width="4" height="8"/><rect x="78" y="148" width="4" height="8"/><rect x="318" y="148" width="4" height="8"/><rect x="368" y="160" width="4" height="8"/></g>
+  <path d="M90 186 Q200 166 310 186 L310 200 Q200 182 90 200Z" fill="#1c1216"/>
+  <!-- вороны -->
+  <g fill="#070506">
+    <path d="M150 120 l26 -16 l12 8 l12 -8 l26 16 l-22 -4 l-16 10 l-16 -10z"/>
+    <path d="M210 70 l20 -12 l9 6 l9 -6 l20 12 l-17 -3 l-12 8 l-12 -8z"/>
+    <path d="M110 80 l16 -10 l8 5 l8 -5 l16 10 l-14 -2 l-10 6 l-10 -6z"/>
+    <path d="M260 130 l14 -9 l6 4 l6 -4 l14 9 l-12 -2 l-8 5 l-8 -5z"/>
+    <path d="M190 40 l12 -8 l5 3 l5 -3 l12 8 l-10 -2 l-7 4 l-7 -4z"/>
+    <path d="M80 130 l10 -6 l5 3 l5 -3 l10 6 l-8 -1 l-7 4 l-7 -4z"/>
+    <path d="M320 40 l10 -6 l5 3 l5 -3 l10 6 l-8 -1 l-7 4 l-7 -4z"/>
+  </g>
+  <g fill="#0a0709" opacity=".8"><path d="M176 132 l-4 10 l6 -6z"/><path d="M232 80 l-3 8 l5 -5z"/></g>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".4" r=".75"><stop offset="0" stop-color="#4a2c1c"/><stop offset=".55" stop-color="#1e1310"/><stop offset="1" stop-color="#0b0807"/></radialGradient>
+    <linearGradient id="barrel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a170e"/><stop offset=".45" stop-color="#7a4a2c"/><stop offset="1" stop-color="#22130c"/></linearGradient>
+    <linearGradient id="mug" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5a4232"/><stop offset=".5" stop-color="#a7835c"/><stop offset="1" stop-color="#4a3424"/></linearGradient>
+    <radialGradient id="lamp" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd59a" stop-opacity=".8"/><stop offset="1" stop-color="#e09a50" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg)"/>
+  <!-- балка и вывеска -->
+  <rect x="0" y="22" width="400" height="12" fill="#1a0f0b"/>
+  <path d="M250 34 V48 M310 34 V48" stroke="#5a4232" stroke-width="2"/>
+  <rect x="236" y="48" width="88" height="46" rx="4" fill="#3a2316" stroke="#b08a62" stroke-width="2"/>
+  <g fill="#d2b9a0"><path d="M262 64a8 8 0 1 0 0.01 0zM266 71 h30 v4 h-4 v5 h-3 v-5 h-4 v4 h-3 v-4 h-16z"/></g>
+  <path d="M262 60a10 10 0 1 0 0.01 0" fill="none"/>
+  <!-- лампа -->
+  <circle cx="100" cy="70" r="46" fill="url(#lamp)"/>
+  <path d="M100 34 V54" stroke="#3a2a22" stroke-width="2"/><path d="M92 54 h16 l-3 22 h-10Z" fill="#2a1d1a"/><rect x="96" y="58" width="8" height="14" fill="#ffd59a"/>
+  <!-- стойка -->
+  <rect x="0" y="170" width="400" height="16" fill="#4a2c1c"/>
+  <rect x="0" y="186" width="400" height="74" fill="#22140e"/>
+  <path d="M0 200 H400 M0 230 H400" stroke="#150c08" stroke-width="2"/>
+  <!-- бочки -->
+  <g>
+    <ellipse cx="60" cy="150" rx="36" ry="10" fill="#1c100a"/>
+    <path d="M24 108 C20 128 20 140 24 150 H96 C100 140 100 128 96 108Z" fill="url(#barrel)"/>
+    <ellipse cx="60" cy="108" rx="36" ry="10" fill="#5a3620"/>
+    <path d="M23 118 H97 M22 140 H98" stroke="#1a1310" stroke-width="4"/>
+    <circle cx="60" cy="130" r="4" fill="#b08a62"/>
+  </g>
+  <!-- кружки -->
+  <g>
+    <path d="M160 126 h34 v40 a4 4 0 0 1 -4 4 h-26 a4 4 0 0 1 -4 -4Z" fill="url(#mug)"/>
+    <path d="M194 134 h8 a6 6 0 0 1 6 6 v12 a6 6 0 0 1 -6 6 h-8 v-5 h7 v-14 h-7Z" fill="#7a5a3c"/>
+    <path d="M158 126 c4 -10 14 -8 18 -4 c4 -6 14 -6 20 2 v6 h-38Z" fill="#f1e6d4"/>
+    <path d="M216 134 h30 v34 a4 4 0 0 1 -4 4 h-22 a4 4 0 0 1 -4 -4Z" fill="url(#mug)"/>
+    <path d="M246 140 h7 a5 5 0 0 1 5 5 v10 a5 5 0 0 1 -5 5 h-7 v-4 h6 v-12 h-6Z" fill="#7a5a3c"/>
+    <path d="M214 134 c3 -8 12 -7 15 -3 c4 -5 12 -5 17 2 v5 h-32Z" fill="#f1e6d4"/>
+  </g>
+  <!-- свеча и хлеб -->
+  <rect x="300" y="140" width="8" height="30" fill="#e8dccf"/><circle cx="304" cy="134" r="10" fill="url(#lamp)"/>
+  <path d="M320 170 c0 -14 40 -14 40 0Z" fill="#a87a48"/>
+</svg>

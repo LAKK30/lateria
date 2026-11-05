@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Играть — LATERIA</title>
+  <meta name="description" content="Как подключиться к серверу LATERIA: пошаговая инструкция, адрес, требования, правила и ответы на вопросы.">
+  <meta name="theme-color" content="#141215">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="LATERIA — на главную">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 2 30 16 16 30 2 16z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M16 6.5 25.5 16 16 25.5 6.5 16z" fill="#57232F"/><path d="M13.5 10.5v11h6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+        <span class="brand__name">LATERIA</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bar" aria-hidden="true"></span><span class="visually-hidden">Открыть меню</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="states.html">Государства</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="ranking.html">Рейтинг</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm site-nav__cta" href="play.html" aria-current="page">Играть</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero--play" aria-labelledby="page-title">
+      <span class="page-hero__emblem" data-icon="banner" aria-hidden="true"></span>
+      <div class="page-hero__art"><img src="assets/img/ridge.svg" alt="" width="1920" height="480"></div>
+      <div class="container page-hero__inner">
+        <p class="eyebrow">Подключение</p>
+        <h1 id="page-title">Начать играть</h1>
+        <p class="lead">Четыре шага от запуска Hytale до первого шага по Латерии. Новые игроки появляются в нейтральном Ашенпорте — там можно осмотреться и выбрать государство.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="steps-title">
+      <div class="container play-grid">
+        <div>
+          <h2 id="steps-title" style="margin-bottom:1.5rem">Пошаговая инструкция</h2>
+          <ol class="steps">
+            <li class="card step reveal"><div><h3>Запустите Hytale</h3><p>Нужна лицензионная копия игры и актуальная версия клиента. Обновите лаунчер, если он предлагает обновление.</p></div></li>
+            <li class="card step reveal"><div><h3>Откройте список серверов</h3><p>В главном меню выберите сетевую игру и нажмите «Добавить сервер».</p></div></li>
+            <li class="card step reveal"><div><h3>Вставьте адрес</h3><p>Скопируйте адрес кнопкой справа, вставьте его в поле адреса, а в названии напишите «LATERIA».</p></div></li>
+            <li class="card step reveal"><div><h3>Войдите и выберите путь</h3><p>Вы появитесь в Ашенпорте. Пройдите короткое обучение у глашатая, затем подайте заявку в государство или отправляйтесь странствовать независимым.</p></div></li>
+          </ol>
+        </div>
+
+        <aside class="card address-card" aria-labelledby="address-title">
+          <p class="eyebrow">Адрес сервера</p>
+          <h2 id="address-title">LATERIA</h2>
+          <p class="server-state">Демо-проект: сервер не запущен</p>
+          <div class="address-box">
+            <code id="server-address">play.lateria.example</code>
+            <button class="btn btn--primary" type="button" id="copy-address" aria-describedby="copy-status">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              <span data-copy-label>Копировать</span>
+            </button>
+          </div>
+          <p class="muted" id="copy-status" aria-live="polite" style="font-size:.86rem;min-height:1.4em"></p>
+          <dl class="kv" id="server-info"></dl>
+          <p class="notice" style="margin-top:1.3rem;font-size:.84rem"><span>Адрес в зарезервированной зоне <strong>.example</strong> — он нигде не работает и используется только для демонстрации.</span></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="req-title">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Перед входом</p><h2 id="req-title">Требования</h2></div></div>
+        <ul class="req-list">
+          <li class="reveal"><span data-icon="key"></span><div><strong>Лицензионный Hytale</strong><span>Вход доступен только с официальным аккаунтом игры.</span></div></li>
+          <li class="reveal"><span data-icon="spark"></span><div><strong>Актуальная версия клиента</strong><span>Сервер обновляется вместе с игрой; модификации клиента не требуются.</span></div></li>
+          <li class="reveal"><span data-icon="shield"></span><div><strong>Возраст от 14 лет</strong><span>Младшим игрокам — с согласия родителей. В чате действует модерация.</span></div></li>
+          <li class="reveal"><span data-icon="banner"></span><div><strong>Согласие с правилами</strong><span>Принимается при первом входе. Краткая версия — ниже.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="rules" aria-labelledby="rules-title">
+      <div class="container">
+        <div class="section-head"><div><p class="eyebrow">Кодекс Латерии</p><h2 id="rules-title">Краткие правила</h2></div></div>
+        <ol class="rules-list">
+          <li><div><strong>Уважение к игрокам</strong><span>Оскорбления, травля и дискриминация запрещены — и в чате, и в отыгрыше.</span></div></li>
+          <li><div><strong>Без читов и эксплойтов</strong><span>Модифицированные клиенты, макросы и использование багов ведут к бану. О багах сообщайте модерации.</span></div></li>
+          <li><div><strong>Войны — по расписанию</strong><span>Атаковать постройки можно только в объявленные окна осад. Вне окна гриф запрещён.</span></div></li>
+          <li><div><strong>Честный рейтинг</strong><span>Твинки, договорные бои и автофермы для баллов запрещены; такие баллы аннулируются.</span></div></li>
+          <li><div><strong>RP по желанию</strong><span>Не навязывайте отыгрыш тем, кто играет без него, и не ломайте чужие RP-сцены.</span></div></li>
+          <li><div><strong>Решения модерации</strong><span>Спорные ситуации разбирает модерация; обжаловать решение можно в течение 7 дней.</span></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tight" id="faq" aria-labelledby="faq-title">
+      <div class="container--narrow">
+        <div class="section-head section-head--center"><div><p class="eyebrow">Вопросы</p><h2 id="faq-title">Частые вопросы</h2></div></div>
+        <div class="faq">
+          <details><summary>Обязательно ли заниматься ролевым отыгрышем?</summary><div><p>Нет. RP приветствуется на балах, советах и судах, но в остальном вы можете играть как обычно: строить, сражаться и исследовать мир.</p></div></details>
+          <details><summary>Как вступить в государство?</summary><div><p>Подайте заявку правителю через глашатая в его столице или на странице государства в игре. Каждое государство само решает, кого принимать. Список государств — <a href="states.html">здесь</a>.</p></div></details>
+          <details><summary>Можно ли основать своё государство?</summary><div><p>Да. Поселение получает статус государства, когда в нём 10 жителей и 40 освоенных чанков. После этого можно выбрать герб, правителя и заключать договоры.</p></div></details>
+          <details><summary>Дают ли покупки в магазине преимущество?</summary><div><p>Нет. Магазин продаёт только привилегии удобства, облики, эффекты и декор. На турнирах и осадах снаряжение у всех одинаковое. Подробнее — в <a href="shop.html">магазине</a>.</p></div></details>
+          <details><summary>Как начисляются баллы рейтинга?</summary><div><p>За активное время, PvP, мобов, строительство, путешествия, события и задания. У каждого вида есть дневной лимит, поэтому накрутить рейтинг одним занятием нельзя. Подробности — на странице <a href="ranking.html#rules-title">рейтинга</a>.</p></div></details>
+          <details><summary>Что будет, если моё государство проиграет войну?</summary><div><p>Победитель получает спорную территорию или условия договора, указанные при объявлении войны. Постройки жителей вне спорной зоны не разрушаются.</p></div></details>
+          <details><summary>Сервер действительно работает?</summary><div><p>Нет — LATERIA является демонстрационным проектом для портфолио. Адрес, игроки, события и цены вымышлены.</p></div></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html" aria-label="LATERIA — на главную">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 2 30 16 16 30 2 16z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M16 6.5 25.5 16 16 25.5 6.5 16z" fill="#57232F"/><path d="M13.5 10.5v11h6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+          <span class="brand__name">LATERIA</span>
+        </a>
+        <p>Dark Fantasy сервер Hytale с государствами, магией, PvP и лёгким ролевым отыгрышем. <span data-season></span>.</p>
+      </div>
+      <nav aria-label="Разделы сайта">
+        <p class="footer__title">Разделы</p>
+        <ul class="footer__links">
+          <li><a href="states.html">Государства</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="ranking.html">Рейтинг игроков</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="play.html">Как начать играть</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer__title">Демо-адрес</p>
+        <p class="footer__server" data-server-address>play.lateria.example</p>
+        <ul class="footer__links">
+          <li><a href="play.html#rules">Правила сервера</a></li>
+          <li><a href="play.html#faq">Частые вопросы</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>LATERIA — вымышленный сервер, демонстрационный проект для портфолио. Игроки, государства, даты и цены вымышлены, сервер не работает, платежи не принимаются. Проект не связан с Hypixel Studios; Hytale — товарный знак его правообладателя.</p>
+      <p>© 2026 LATERIA</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/db.js" defer></script>
+  <script src="assets/js/heraldry.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/pages/play.js" defer></script>
+</body>
+</html>

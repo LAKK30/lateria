@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 480" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="r1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a1f29"/>
+      <stop offset="1" stop-color="#1c1419"/>
+    </linearGradient>
+    <linearGradient id="r2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#21151a"/>
+      <stop offset="1" stop-color="#141215"/>
+    </linearGradient>
+    <linearGradient id="r3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#140f12"/>
+      <stop offset="1" stop-color="#141215"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="1500" cy="150" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b8454f" stop-opacity=".3"/>
+      <stop offset=".5" stop-color="#57232F" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#57232F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx=".4" cy=".35" r=".7">
+      <stop offset="0" stop-color="#e8bfa8"/>
+      <stop offset="1" stop-color="#8c3540"/>
+    </radialGradient>
+    <filter id="b" x="-20%" y="-100%" width="140%" height="300%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="w"><feGaussianBlur stdDeviation="2" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1920" height="480" fill="url(#glow)"/>
+  <circle cx="1500" cy="140" r="46" fill="url(#moon)" opacity=".35"/>
+  <path d="M0 330 L130 250 L230 285 L360 180 L460 245 L590 160 L720 270 L850 205 L980 285 L1110 225 L1250 292 L1390 195 L1530 260 L1660 190 L1790 240 L1920 210 V480 H0Z" fill="url(#r1)"/>
+  <path d="M360 180 L460 245 M590 160 L720 270 M1390 195 L1530 260 M1660 190 L1790 240" stroke="#c75a5c" stroke-opacity=".18" stroke-width="2" fill="none"/>
+  <path d="M590 160 L620 186 L604 184 L590 204 L572 184Z M1660 190 L1686 212 L1670 211 L1658 228 L1642 210Z" fill="#c9b3a5" opacity=".1"/>
+  <g fill="#1a1217">
+    <path d="M560 170 V134 H556 V124 H563 V129 H570 V124 H577 V129 H584 V124 H591 V134 H587 V170Z M554 124 L573 92 L592 124Z"/>
+    <path d="M1376 200 V160 H1372 V151 H1379 V155 H1386 V151 H1393 V155 H1400 V151 H1407 V160 H1403 V200Z M1370 151 L1389 116 L1408 151Z M1407 200 V176 H1440 V200Z M1424 176 L1432 156 L1440 176Z"/>
+  </g>
+  <g fill="#e2a066" filter="url(#w)"><rect x="571" y="140" width="3" height="7" opacity=".7"/><rect x="1388" y="166" width="3" height="7" opacity=".7"/></g>
+  <ellipse cx="960" cy="320" rx="900" ry="40" fill="#5d2430" opacity=".35" filter="url(#b)"/>
+  <path d="M0 395 L120 345 L250 372 L380 316 L510 362 L650 330 L790 378 L930 342 L1090 386 L1230 350 L1370 384 L1520 330 L1670 368 L1820 336 L1920 350 V480 H0Z" fill="url(#r2)"/>
+  <path d="M0 440 Q240 410 480 425 T960 420 T1440 430 T1920 415 V480 H0Z" fill="url(#r3)"/>
+</svg>

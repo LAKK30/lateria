@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c090c"/><stop offset=".6" stop-color="#3d1820"/><stop offset="1" stop-color="#140c0f"/></linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#e48a74" stop-opacity=".7"/><stop offset="1" stop-color="#e48a74" stop-opacity="0"/></radialGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a8590"/><stop offset=".5" stop-color="#e8e2dc"/><stop offset="1" stop-color="#6b6670"/></linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#sky)"/>
+  <circle cx="200" cy="150" r="130" fill="url(#sun)"/>
+  <path d="M0 190 L70 172 L150 184 L240 166 L320 182 L400 170 V260 H0Z" fill="#1a1013"/>
+  <path d="M0 214 Q120 200 200 206 T400 202 V260 H0Z" fill="#0b0809"/>
+  <!-- меч в земле -->
+  <path d="M232 214 L236 110 L240 214Z" fill="url(#blade)"/>
+  <rect x="218" y="104" width="36" height="6" rx="2" fill="#b08a62"/>
+  <rect x="233" y="80" width="6" height="24" fill="#2a1d1a"/>
+  <circle cx="236" cy="77" r="5" fill="#b08a62"/>
+  <!-- коленопреклонённый рыцарь -->
+  <g fill="#070506">
+    <circle cx="190" cy="104" r="12"/>
+    <path d="M178 116 C168 130 166 150 170 168 L160 196 L186 214 L196 200 L188 182 L206 182 L214 214 L228 214 L222 170 C226 150 222 130 206 116Z"/>
+    <path d="M206 124 L232 112 L236 120 L212 136Z"/>
+    <path d="M178 118 C160 130 146 170 140 214 L176 214 L170 168Z"/>
+  </g>
+  <path d="M206 116 C222 130 226 150 222 170 L228 214" stroke="#e48a74" stroke-opacity=".5" stroke-width="1.5" fill="none"/>
+  <path d="M236 110 L240 214" stroke="#fff" stroke-opacity=".5" stroke-width="1"/>
+</svg>

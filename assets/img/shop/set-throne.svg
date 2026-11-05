@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1316"/><stop offset="1" stop-color="#2a1a1f"/></linearGradient>
+    <linearGradient id="tap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6e2231"/><stop offset="1" stop-color="#3a1119"/></linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1a0f0d"/><stop offset=".5" stop-color="#3d2519"/><stop offset="1" stop-color="#150c0a"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0d8b8"/><stop offset="1" stop-color="#8f6d4d"/></linearGradient>
+    <radialGradient id="flame" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd9a0"/><stop offset=".5" stop-color="#e38a4c" stop-opacity=".6"/><stop offset="1" stop-color="#e38a4c" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#wall)"/>
+  <!-- стрельчатое окно -->
+  <path d="M170 150 V60 a30 30 0 0 1 60 0 V150Z" fill="#3a1820"/>
+  <path d="M200 30 V150 M170 90 H230" stroke="#120d10" stroke-width="4"/>
+  <!-- гобелены -->
+  <path d="M60 30 H120 V170 L90 156 L60 170Z" fill="url(#tap)"/>
+  <path d="M280 30 H340 V170 L310 156 L280 170Z" fill="url(#tap)"/>
+  <path d="M60 30 H120 M280 30 H340" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M90 70 l4 11 11 4-11 4-4 11-4-11-11-4 11-4z M310 70 l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#d2b9a0" opacity=".8"/>
+  <!-- ковёр и ступени -->
+  <path d="M0 210 H400 V260 H0Z" fill="#120c0e"/>
+  <path d="M130 196 H270 L290 210 H110Z" fill="#2a1c20"/>
+  <path d="M176 210 H224 L250 260 H150Z" fill="#6e2231"/>
+  <path d="M176 210 L150 260 M224 210 L250 260" stroke="#c9a77f" stroke-width="2" opacity=".6"/>
+  <!-- трон -->
+  <path d="M160 196 V80 L172 60 L182 76 L200 44 L218 76 L228 60 L240 80 V196Z" fill="url(#wood)"/>
+  <path d="M172 112 H228 V170 H172Z" fill="#5a1a27"/>
+  <path d="M150 150 H250 V170 H150Z M150 170 H160 V196 H150Z M240 170 H250 V196 H240Z" fill="url(#wood)"/>
+  <path d="M160 80 L172 60 L182 76 L200 44 L218 76 L228 60 L240 80" stroke="url(#gold)" stroke-width="3" fill="none"/>
+  <circle cx="200" cy="92" r="6" fill="#9C3949" stroke="url(#gold)" stroke-width="2"/>
+  <!-- канделябры -->
+  <g fill="#2a1d1a"><rect x="128" y="120" width="5" height="90"/><rect x="267" y="120" width="5" height="90"/><rect x="118" y="120" width="25" height="4"/><rect x="257" y="120" width="25" height="4"/></g>
+  <g fill="#e8dccf"><rect x="119" y="108" width="4" height="12"/><rect x="128.5" y="104" width="4" height="16"/><rect x="138" y="108" width="4" height="12"/><rect x="258" y="108" width="4" height="12"/><rect x="267.5" y="104" width="4" height="16"/><rect x="277" y="108" width="4" height="12"/></g>
+  <g fill="url(#flame)"><circle cx="121" cy="102" r="10"/><circle cx="130.5" cy="97" r="12"/><circle cx="140" cy="102" r="10"/><circle cx="260" cy="102" r="10"/><circle cx="269.5" cy="97" r="12"/><circle cx="279" cy="102" r="10"/></g>
+</svg>

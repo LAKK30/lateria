@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LATERIA — Dark Fantasy сервер Hytale</title>
+  <meta name="description" content="LATERIA — сервер Hytale в жанре Dark Fantasy: государства, политика, магия, PvP и лёгкий ролевой отыгрыш.">
+  <meta name="theme-color" content="#141215">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/hero-citadel.svg" as="image" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="LATERIA — на главную">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 2 30 16 16 30 2 16z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M16 6.5 25.5 16 16 25.5 6.5 16z" fill="#57232F"/><path d="M13.5 10.5v11h6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+        <span class="brand__name">LATERIA</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bar" aria-hidden="true"></span><span class="visually-hidden">Открыть меню</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a href="index.html" aria-current="page">Главная</a></li>
+          <li><a href="states.html">Государства</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="ranking.html">Рейтинг</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm site-nav__cta" href="play.html">Играть</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Первый экран -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__art">
+        <img src="assets/img/hero-citadel.svg" alt="Цитадель на скале под багровой луной, туман в долине" width="1600" height="900" fetchpriority="high">
+      </div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="eyebrow"><span>Сервер Hytale · Dark Fantasy · <span data-season>Сезон III</span></span></p>
+          <h1 class="hero__title" id="hero-title">LATERIA</h1>
+          <p class="hero__tagline">Шесть корон. Одна багровая луна. Твоё имя — в летописи мира.</p>
+          <p class="hero__text">Стройте города, выбирайте правителей, заключайте союзы и объявляйте войны. Магия, честное PvP и ролевой отыгрыш — по желанию, а не по обязанности.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="play.html">Начать играть</a>
+            <a class="btn btn--ghost btn--lg" href="states.html">Выбрать государство</a>
+          </div>
+          <div class="hero__meta" id="hero-meta" aria-label="Мир в цифрах"></div>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#about">Летопись</a>
+    </section>
+
+    <!-- О сервере -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__text reveal">
+          <p class="eyebrow">О мире</p>
+          <h2 id="about-title">Мир, который пишут игроки</h2>
+          <p class="lead">LATERIA — это не набор мини-игр, а живой мир с политикой и историей. Каждое государство основано игроками, каждая война начинается с реального спора, а каждое решение правителей попадает в летопись сезона.</p>
+          <p class="muted">Сезон длится четыре месяца. За это время королевства успевают подняться, заключить союзы, проиграть войны и возродиться. Новичок может вступить в любое государство, служить ему или основать собственное.</p>
+          <a class="link-arrow" href="states.html">Познакомиться с государствами</a>
+        </div>
+        <figure class="about__quote reveal">
+          <blockquote>Кто держит Серый перевал — держит север. Кто держит север — держит железо. А кто держит железо, тот пишет законы.</blockquote>
+          <figcaption>— Из речи короля Ардрика I перед Советом лордов</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Особенности -->
+    <section class="section section--band" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <div>
+            <p class="eyebrow">Особенности</p>
+            <h2 id="features-title">Четыре столпа Латерии</h2>
+          </div>
+        </div>
+        <ul class="features">
+          <li class="card feature reveal">
+            <span class="feature__icon" data-icon="crown"></span>
+            <h3>Государства</h3>
+            <p>Казна, территория, законы и выборы правителя. Союзы и войны объявляются официально и видны всему миру.</p>
+            <a class="link-arrow" href="states.html">Государства</a>
+          </li>
+          <li class="card feature reveal">
+            <span class="feature__icon" data-icon="crystal"></span>
+            <h3>Магия</h3>
+            <p>Школы холода, крови и алхимии. Магические испытания проверяют не снаряжение, а знание заклинаний.</p>
+            <a class="link-arrow" href="events.html?type=magic">Испытания</a>
+          </li>
+          <li class="card feature reveal">
+            <span class="feature__icon" data-icon="sword"></span>
+            <h3>Честное PvP</h3>
+            <p>Турниры в едином снаряжении, осады по расписанию и защита от накрутки. Магазин не продаёт силу.</p>
+            <a class="link-arrow" href="events.html?type=pvp">Турниры</a>
+          </li>
+          <li class="card feature reveal">
+            <span class="feature__icon" data-icon="mask"></span>
+            <h3>Лёгкий RP</h3>
+            <p>Балы, советы и суды для тех, кто любит отыгрыш. Не хотите играть роль — просто играйте.</p>
+            <a class="link-arrow" href="events.html?type=rp">RP-события</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="section section--tight" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="stats-title">Мир в цифрах</h2>
+        <dl class="stats reveal" id="world-stats"></dl>
+        <p class="stats-note">Демонстрационные данные сезона. Сервер вымышленный.</p>
+      </div>
+    </section>
+
+    <!-- Ближайшее событие -->
+    <section class="section" aria-labelledby="next-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Ближайшее событие</p>
+            <h2 id="next-title">Скоро в Латерии</h2>
+          </div>
+          <a class="link-arrow" href="events.html">Все события</a>
+        </div>
+        <div id="next-event"></div>
+      </div>
+    </section>
+
+    <!-- Государства -->
+    <section class="section section--band" aria-labelledby="states-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Шесть корон</p>
+            <h2 id="states-title">Государства сезона</h2>
+            <p class="lead">Каждое государство — со своей историей, гербом, казной и врагами. Выберите сторону ещё до первого входа.</p>
+          </div>
+          <a class="link-arrow" href="states.html">Все государства</a>
+        </div>
+        <div class="states-grid" id="states-preview"></div>
+      </div>
+    </section>
+
+    <!-- Лидеры -->
+    <section class="section" aria-labelledby="leaders-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Рейтинг сезона</p>
+            <h2 id="leaders-title">Те, о ком говорят</h2>
+          </div>
+          <a class="link-arrow" href="ranking.html">Полный рейтинг</a>
+        </div>
+        <div class="mini-podium" id="top-players"></div>
+      </div>
+    </section>
+
+    <!-- Финальный призыв -->
+    <section class="section section--tight" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__art"><img src="assets/img/hero-citadel.svg" alt="" width="1600" height="900" loading="lazy"></div>
+          <div class="ornament" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M7 0 14 7 7 14 0 7z" fill="currentColor"/></svg></div>
+          <h2 id="cta-title">Летопись ждёт новое имя</h2>
+          <p>Подключение занимает пару минут. Выберите государство сразу или осмотритесь в нейтральном Ашенпорте.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--lg" href="play.html">Начать играть</a>
+            <a class="btn btn--ghost btn--lg" href="events.html">Календарь событий</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <noscript><div class="container"><p class="notice">Для отображения данных мира включите JavaScript.</p></div></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html" aria-label="LATERIA — на главную">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 2 30 16 16 30 2 16z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M16 6.5 25.5 16 16 25.5 6.5 16z" fill="#57232F"/><path d="M13.5 10.5v11h6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+          <span class="brand__name">LATERIA</span>
+        </a>
+        <p>Dark Fantasy сервер Hytale с государствами, магией, PvP и лёгким ролевым отыгрышем. <span data-season></span>.</p>
+      </div>
+      <nav aria-label="Разделы сайта">
+        <p class="footer__title">Разделы</p>
+        <ul class="footer__links">
+          <li><a href="states.html">Государства</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="ranking.html">Рейтинг игроков</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="play.html">Как начать играть</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer__title">Демо-адрес</p>
+        <p class="footer__server" data-server-address>play.lateria.example</p>
+        <ul class="footer__links">
+          <li><a href="play.html#rules">Правила сервера</a></li>
+          <li><a href="play.html#faq">Частые вопросы</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>LATERIA — вымышленный сервер, демонстрационный проект для портфолио. Игроки, государства, даты и цены вымышлены, сервер не работает, платежи не принимаются. Проект не связан с Hypixel Studios; Hytale — товарный знак его правообладателя.</p>
+      <p>© 2026 LATERIA</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/db.js" defer></script>
+  <script src="assets/js/heraldry.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/pages/home.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#3a2a26"/><stop offset=".6" stop-color="#171114"/><stop offset="1" stop-color="#09080a"/></radialGradient>
+    <linearGradient id="bone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#efe2cf"/><stop offset=".5" stop-color="#c8b298"/><stop offset="1" stop-color="#7e6a58"/></linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1c191c"/><stop offset=".45" stop-color="#4a4247"/><stop offset=".6" stop-color="#2b262a"/><stop offset="1" stop-color="#121012"/></linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg)"/>
+  <ellipse cx="200" cy="240" rx="120" ry="10" fill="#000" opacity=".5"/>
+  <!-- наплечники и кираса -->
+  <path d="M110 250 C110 200 130 176 160 166 L240 166 C270 176 290 200 290 250Z" fill="url(#steel)"/>
+  <path d="M100 196 C110 170 140 160 166 168 L156 204 C136 198 116 202 100 210Z" fill="url(#bone)"/>
+  <path d="M300 196 C290 170 260 160 234 168 L244 204 C264 198 284 202 300 210Z" fill="url(#bone)"/>
+  <g stroke="#6b5949" stroke-width="2" fill="none"><path d="M112 192 C130 184 146 184 160 188"/><path d="M288 192 C270 184 254 184 240 188"/></g>
+  <!-- рёбра на кирасе -->
+  <g stroke="url(#bone)" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M200 176 V246"/><path d="M196 190 C176 192 162 200 156 214"/><path d="M204 190 C224 192 238 200 244 214"/>
+    <path d="M196 208 C178 210 166 218 162 230"/><path d="M204 208 C222 210 234 218 238 230"/>
+  </g>
+  <!-- шлем -->
+  <path d="M152 112 C152 70 176 52 200 52 C224 52 248 70 248 112 L244 150 C232 164 168 164 156 150Z" fill="url(#steel)"/>
+  <path d="M166 104 H234 L230 116 H170Z" fill="#050405"/>
+  <path d="M198 116 V156 H202 V116Z" fill="#050405"/>
+  <!-- костяная корона -->
+  <path d="M150 66 L158 30 L170 58 L182 20 L192 54 L200 10 L208 54 L218 20 L230 58 L242 30 L250 66 C234 58 166 58 150 66Z" fill="url(#bone)"/>
+  <circle cx="200" cy="48" r="5" fill="#9C3949"/>
+  <path d="M248 112 C248 70 224 52 200 52" stroke="#e8a28a" stroke-opacity=".35" stroke-width="2" fill="none"/>
+  <!-- глазницы -->
+  <circle cx="182" cy="110" r="3" fill="#c8554f" opacity=".8"/><circle cx="218" cy="110" r="3" fill="#c8554f" opacity=".8"/>
+</svg>

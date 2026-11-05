@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c1418"/><stop offset="1" stop-color="#2b1b21"/></linearGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset=".5" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0d8b8"/><stop offset="1" stop-color="#8f6d4d"/></linearGradient>
+    <g id="b"><path d="M0 0 H44 V120 L22 104 L0 120Z"/></g>
+  </defs>
+  <rect width="400" height="260" fill="url(#wall)"/>
+  <!-- кладка -->
+  <g stroke="#140e11" stroke-width="2" opacity=".7"><path d="M0 60 H400 M0 120 H400 M0 180 H400 M60 0 V60 M180 0 V60 M300 0 V60 M120 60 V120 M240 60 V120 M360 60 V120 M60 120 V180 M180 120 V180 M300 120 V180"/></g>
+  <rect x="0" y="30" width="400" height="8" fill="#1a1013"/>
+  <!-- шесть знамён -->
+  <g transform="translate(26 38)"><use href="#b" fill="#57232F"/><use href="#b" fill="url(#shade)"/><path d="M14 40v-12h-3v-6h4v2h3v-2h6v2h3v-2h4v6h-3v12z" fill="#D2B9A0"/></g>
+  <g transform="translate(88 38)"><use href="#b" fill="#6a2534"/><use href="#b" fill="url(#shade)"/><path d="M10 32c4-6 8-8 12-8s8 2 12 8c-4 6-8 8-12 8s-8-2-12-8z" fill="#D2B9A0"/><circle cx="22" cy="32" r="3" fill="#6a2534"/></g>
+  <g transform="translate(150 38)"><use href="#b" fill="#33424e"/><use href="#b" fill="url(#shade)"/><path d="M22 18v28M10 25l24 14M10 39l24-14" stroke="#D2B9A0" stroke-width="2.5" stroke-linecap="round"/></g>
+  <g transform="translate(212 38)"><use href="#b" fill="#4a1f29"/><use href="#b" fill="url(#shade)"/><circle cx="22" cy="24" r="6" fill="none" stroke="#D2B9A0" stroke-width="3"/><path d="M20 30h4v16h-4zM24 38h5v3h-5z" fill="#D2B9A0"/></g>
+  <g transform="translate(274 38)"><use href="#b" fill="#36302f"/><use href="#b" fill="url(#shade)"/><path d="M22 14l2.5 4v18h-5v-18zM14 36h16v3h-16zM20.5 39h3v6h-3z" fill="#D2B9A0"/></g>
+  <g transform="translate(336 38)"><use href="#b" fill="#2b3830"/><use href="#b" fill="url(#shade)"/><path d="M26 18a13 13 0 1 0 0 26a13 13 0 0 1 0-26z" fill="#D2B9A0"/></g>
+  <g stroke="url(#gold)" stroke-width="2"><path d="M26 38h44M88 38h44M150 38h44M212 38h44M274 38h44M336 38h44"/></g>
+  <!-- щиты на полу -->
+  <rect x="0" y="200" width="400" height="60" fill="#120c0e"/>
+  <g stroke="url(#gold)" stroke-width="2">
+    <path d="M60 196h30v16c0 12-8 18-15 22-7-4-15-10-15-22z" fill="#57232F"/>
+    <path d="M185 196h30v16c0 12-8 18-15 22-7-4-15-10-15-22z" fill="#33424e"/>
+    <path d="M310 196h30v16c0 12-8 18-15 22-7-4-15-10-15-22z" fill="#2b3830"/>
+  </g>
+</svg>

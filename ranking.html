@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Рейтинг игроков — LATERIA</title>
+  <meta name="description" content="Рейтинг игроков LATERIA по баллам активности: PvP, строительство, исследование, события и задания.">
+  <meta name="theme-color" content="#141215">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="LATERIA — на главную">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 2 30 16 16 30 2 16z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M16 6.5 25.5 16 16 25.5 6.5 16z" fill="#57232F"/><path d="M13.5 10.5v11h6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+        <span class="brand__name">LATERIA</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle__bar" aria-hidden="true"></span><span class="visually-hidden">Открыть меню</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="states.html">Государства</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="ranking.html" aria-current="page">Рейтинг</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm site-nav__cta" href="play.html">Играть</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero--ranking" aria-labelledby="page-title">
+      <span class="page-hero__emblem" data-icon="chevrons" aria-hidden="true"></span>
+      <div class="page-hero__art"><img src="assets/img/ridge.svg" alt="" width="1920" height="480"></div>
+      <div class="container page-hero__inner">
+        <p class="eyebrow" data-season>Сезон III</p>
+        <h1 id="page-title">Рейтинг игроков</h1>
+        <p class="lead">Баллы активности начисляются за всё, чем живёт мир: сражения, строительство, исследования, события и задания. PvP — лишь одна из восьми дорог наверх.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="top-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="top-title">Лидеры сезона</h2>
+        <div class="podium" id="podium"></div>
+
+        <div class="toolbar">
+          <div class="toolbar__side" style="flex:1">
+            <div class="field" style="flex:1;min-width:220px;max-width:380px">
+              <label class="field__label" for="search">Поиск по никнейму</label>
+              <div class="input-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                <input class="input" type="search" id="search" placeholder="Например, Draven" autocomplete="off" spellcheck="false">
+              </div>
+            </div>
+            <div class="field" style="min-width:200px">
+              <label class="field__label" for="state-filter">Государство</label>
+              <select class="select" id="state-filter"></select>
+            </div>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="table-scroll">
+          <table class="ranking-table">
+            <caption>Нажмите на никнейм, чтобы открыть профиль.</caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Игрок</th>
+                <th scope="col">Государство</th>
+                <th scope="col" class="num" data-sort="score" aria-sort="descending"><button type="button">Баллы</button></th>
+                <th scope="col" class="num" data-sort="hours"><button type="button">Часы</button></th>
+                <th scope="col" class="num" data-sort="kills"><button type="button">Победы PvP</button></th>
+                <th scope="col" class="num" data-sort="kd"><button type="button">K/D</button></th>
+                <th scope="col" class="num" data-sort="blocks"><button type="button">Блоки</button></th>
+              </tr>
+            </thead>
+            <tbody id="ranking-body"></tbody>
+          </table>
+          <div id="ranking-empty" hidden class="empty"><h3>Игрок не найден</h3><p>Проверьте написание никнейма или сбросьте фильтр государства.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="rules-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Как считаются баллы</p>
+            <h2 id="rules-title">Система активности</h2>
+            <p class="lead">Каждый вид активности имеет дневной лимит. Превышение не приносит баллов — так рейтинг нельзя «нафармить» одним занятием.</p>
+          </div>
+        </div>
+        <div class="score-rules">
+          <div class="table-scroll">
+            <table class="rules-table">
+              <thead><tr><th scope="col">Активность</th><th scope="col">Баллы</th><th scope="col">Лимит в день</th></tr></thead>
+              <tbody id="rules-body"></tbody>
+            </table>
+          </div>
+          <div class="card rules-notes">
+            <h3>Защита от накрутки</h3>
+            <ul id="rules-notes"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="modal" id="player-modal" aria-labelledby="player-modal-title">
+      <div class="modal__inner" data-modal-body></div>
+    </dialog>
+
+    <noscript><div class="container"><p class="notice">Для отображения рейтинга включите JavaScript.</p></div></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html" aria-label="LATERIA — на главную">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 2 30 16 16 30 2 16z" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M16 6.5 25.5 16 16 25.5 6.5 16z" fill="#57232F"/><path d="M13.5 10.5v11h6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+          <span class="brand__name">LATERIA</span>
+        </a>
+        <p>Dark Fantasy сервер Hytale с государствами, магией, PvP и лёгким ролевым отыгрышем. <span data-season></span>.</p>
+      </div>
+      <nav aria-label="Разделы сайта">
+        <p class="footer__title">Разделы</p>
+        <ul class="footer__links">
+          <li><a href="states.html">Государства</a></li>
+          <li><a href="events.html">События</a></li>
+          <li><a href="ranking.html">Рейтинг игроков</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="play.html">Как начать играть</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer__title">Демо-адрес</p>
+        <p class="footer__server" data-server-address>play.lateria.example</p>
+        <ul class="footer__links">
+          <li><a href="play.html#rules">Правила сервера</a></li>
+          <li><a href="play.html#faq">Частые вопросы</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__legal">
+      <p>LATERIA — вымышленный сервер, демонстрационный проект для портфолио. Игроки, государства, даты и цены вымышлены, сервер не работает, платежи не принимаются. Проект не связан с Hypixel Studios; Hytale — товарный знак его правообладателя.</p>
+      <p>© 2026 LATERIA</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/db.js" defer></script>
+  <script src="assets/js/heraldry.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+  <script src="assets/js/pages/ranking.js" defer></script>
+</body>
+</html>

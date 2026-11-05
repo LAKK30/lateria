@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".42" r=".7"><stop offset="0" stop-color="#4a1c26"/><stop offset=".6" stop-color="#1b1116"/><stop offset="1" stop-color="#0c090b"/></radialGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3d111b"/><stop offset=".35" stop-color="#8a2b3b"/><stop offset=".55" stop-color="#6d1f2d"/><stop offset=".8" stop-color="#9a3546"/><stop offset="1" stop-color="#3a1018"/></linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0d8b8"/><stop offset="1" stop-color="#9c7a58"/></linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg)"/>
+  <ellipse cx="200" cy="236" rx="110" ry="12" fill="#000" opacity=".45"/>
+  <!-- стойка -->
+  <rect x="197" y="20" width="6" height="220" fill="#1f1418"/>
+  <rect x="140" y="38" width="120" height="7" rx="3" fill="#2a1c21"/>
+  <!-- плащ -->
+  <path d="M146 44 C150 44 250 44 254 44 C262 90 276 160 292 228 C260 236 232 230 216 236 C204 230 196 230 184 236 C168 230 140 236 108 228 C124 160 138 90 146 44Z" fill="url(#cloth)"/>
+  <path d="M170 60 C172 120 160 180 150 230 M200 52 C202 120 200 180 198 232 M230 60 C232 120 240 180 252 230" stroke="#2a0b12" stroke-width="3" fill="none" opacity=".55"/>
+  <path d="M146 44 C150 44 250 44 254 44 L250 62 C220 70 180 70 150 62Z" fill="#5a1825"/>
+  <path d="M108 228 C140 236 168 230 184 236 C196 230 204 230 216 236 C232 230 260 236 292 228" stroke="#d2b9a0" stroke-width="2" fill="none" opacity=".55"/>
+  <!-- герб на спине -->
+  <path d="M182 104h36v22c0 16-9 25-18 30-9-5-18-14-18-30z" fill="#1c1a21" stroke="url(#gold)" stroke-width="2.5"/>
+  <path d="M195 136v-16h-2v-6h3v2h2v-2h4v2h2v-2h3v6h-2v16z" fill="#d2b9a0"/>
+  <!-- застёжки -->
+  <circle cx="168" cy="56" r="7" fill="url(#gold)"/><circle cx="232" cy="56" r="7" fill="url(#gold)"/>
+  <path d="M175 56 Q200 66 225 56" stroke="#c9a77f" stroke-width="2" fill="none"/>
+  <rect width="400" height="260" fill="url(#fade)"/>
+  <path d="M292 228 C276 160 262 90 254 44" stroke="#e8846f" stroke-opacity=".35" stroke-width="2" fill="none"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx=".55" cy=".45" r=".7"><stop offset="0" stop-color="#2c2030"/><stop offset=".6" stop-color="#151017"/><stop offset="1" stop-color="#09080a"/></radialGradient>
+    <linearGradient id="leather" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b3339"/><stop offset=".5" stop-color="#1e1a1e"/><stop offset="1" stop-color="#0d0b0d"/></linearGradient>
+    <linearGradient id="beak" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a2428"/><stop offset=".6" stop-color="#121013"/><stop offset="1" stop-color="#080708"/></linearGradient>
+    <radialGradient id="lens" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#e88b7a"/><stop offset=".5" stop-color="#7d2632"/><stop offset="1" stop-color="#2a0a10"/></radialGradient>
+  </defs>
+  <rect width="400" height="260" fill="url(#bg)"/>
+  <ellipse cx="200" cy="232" rx="120" ry="10" fill="#000" opacity=".5"/>
+  <!-- капюшон -->
+  <path d="M110 60 C130 20 230 10 262 50 C280 80 280 140 266 200 L136 206 C116 150 100 100 110 60Z" fill="#100c10"/>
+  <!-- маска -->
+  <path d="M138 70 C150 46 222 40 244 66 C258 84 256 130 242 152 C226 176 166 178 150 156 C134 134 128 92 138 70Z" fill="url(#leather)"/>
+  <path d="M152 66 C180 54 214 54 236 68" stroke="#6a5a60" stroke-width="2" fill="none" opacity=".6"/>
+  <!-- клюв -->
+  <path d="M200 112 C240 116 300 140 352 196 C300 176 250 168 214 160 C196 150 190 124 200 112Z" fill="url(#beak)"/>
+  <path d="M206 120 C250 128 300 150 346 192" stroke="#4b4046" stroke-width="2" fill="none"/>
+  <path d="M214 160 C250 168 300 176 352 196" stroke="#000" stroke-width="2" fill="none" opacity=".6"/>
+  <!-- линзы -->
+  <circle cx="172" cy="100" r="17" fill="#b08a62"/><circle cx="172" cy="100" r="13" fill="url(#lens)"/>
+  <circle cx="222" cy="98" r="17" fill="#b08a62"/><circle cx="222" cy="98" r="13" fill="url(#lens)"/>
+  <circle cx="167" cy="95" r="3.5" fill="#fff" opacity=".55"/><circle cx="217" cy="93" r="3.5" fill="#fff" opacity=".55"/>
+  <!-- заклёпки и ремни -->
+  <g fill="#b08a62"><circle cx="150" cy="130" r="2.5"/><circle cx="160" cy="150" r="2.5"/><circle cx="240" cy="128" r="2.5"/><circle cx="196" cy="62" r="2.5"/></g>
+  <path d="M138 80 L104 96 M244 74 L282 86" stroke="#2b2226" stroke-width="6" stroke-linecap="round"/>
+  <!-- перья -->
+  <g fill="#0a080a"><path d="M128 64 L92 40 L118 70Z"/><path d="M134 54 L108 18 L128 60Z"/><path d="M150 46 L140 10 L154 48Z"/></g>
+  <path d="M352 196 C300 140 250 116 200 112" stroke="#d87a6c" stroke-opacity=".35" stroke-width="1.5" fill="none"/>
+</svg>

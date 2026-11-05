@@ -1,0 +1,242 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08070a"/>
+      <stop offset=".35" stop-color="#140f14"/>
+      <stop offset=".58" stop-color="#2b141b"/>
+      <stop offset=".72" stop-color="#4a1d27"/>
+      <stop offset=".86" stop-color="#26141a"/>
+      <stop offset="1" stop-color="#0d0b0e"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="1390" cy="330" r="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c2504f" stop-opacity=".42"/>
+      <stop offset=".22" stop-color="#8f2f3c" stop-opacity=".22"/>
+      <stop offset=".6" stop-color="#57232F" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#57232F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moon" cx=".38" cy=".34" r=".75">
+      <stop offset="0" stop-color="#f0cbb4"/>
+      <stop offset=".45" stop-color="#d48a74"/>
+      <stop offset=".8" stop-color="#a5464a"/>
+      <stop offset="1" stop-color="#6e2430"/>
+    </radialGradient>
+    <radialGradient id="moonShade" cx=".75" cy=".7" r=".7">
+      <stop offset="0" stop-color="#3a0f18" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#3a0f18" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="farMt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3c1f29"/>
+      <stop offset="1" stop-color="#1f1419"/>
+    </linearGradient>
+    <linearGradient id="midMt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241519"/>
+      <stop offset="1" stop-color="#120d11"/>
+    </linearGradient>
+    <linearGradient id="cliff" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1216"/>
+      <stop offset=".5" stop-color="#0e0a0d"/>
+      <stop offset="1" stop-color="#070608"/>
+    </linearGradient>
+    <linearGradient id="fogG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a2c3a" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#6b2834" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#1a1014" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vignette" cx=".6" cy=".45" r=".85">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".75"/>
+    </radialGradient>
+    <pattern id="crenel" width="18" height="12" patternUnits="userSpaceOnUse">
+      <rect width="10" height="12" fill="#0d0a0e"/>
+    </pattern>
+    <filter id="blur40" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+    <filter id="blur18" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 .8  0 0 0 0 .7  0 0 0 0 .65  0 0 0 .07 0"/>
+    </filter>
+    <filter id="moonTex" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="4" seed="7"/>
+      <feColorMatrix values="0 0 0 0 .25  0 0 0 0 .05  0 0 0 0 .08  0 0 0 1.1 -.45"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <linearGradient id="castleG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a080b"/><stop offset=".7" stop-color="#110c10"/><stop offset="1" stop-color="#1e1217"/></linearGradient>
+    <linearGradient id="baseGlow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9b3a45" stop-opacity="0"/><stop offset="1" stop-color="#9b3a45" stop-opacity=".28"/></linearGradient>
+    <clipPath id="moonClip"><circle cx="1390" cy="330" r="150"/></clipPath>
+  </defs>
+
+  <!-- небо -->
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <g fill="#e9d9c8">
+    <circle cx="140" cy="90" r="1.3" opacity=".5"/><circle cx="310" cy="170" r="1" opacity=".35"/><circle cx="480" cy="70" r="1.2" opacity=".45"/>
+    <circle cx="660" cy="210" r=".9" opacity=".3"/><circle cx="820" cy="110" r="1.3" opacity=".45"/><circle cx="980" cy="50" r="1" opacity=".4"/>
+    <circle cx="1100" cy="180" r=".9" opacity=".3"/><circle cx="1680" cy="90" r="1.2" opacity=".45"/><circle cx="1800" cy="210" r="1" opacity=".35"/>
+    <circle cx="1860" cy="60" r="1.1" opacity=".4"/><circle cx="400" cy="290" r=".8" opacity=".25"/><circle cx="1580" cy="40" r=".8" opacity=".3"/>
+    <circle cx="70" cy="330" r=".9" opacity=".2"/><circle cx="900" cy="300" r=".7" opacity=".2"/><circle cx="1240" cy="80" r=".9" opacity=".35"/>
+  </g>
+
+  <!-- багровая луна -->
+  <circle cx="1390" cy="330" r="620" fill="url(#halo)"/>
+  <circle cx="1390" cy="330" r="150" fill="url(#moon)"/>
+  <g clip-path="url(#moonClip)">
+    <rect x="1240" y="180" width="300" height="300" fill="#fff" filter="url(#moonTex)" opacity=".9"/>
+    <circle cx="1390" cy="330" r="150" fill="url(#moonShade)"/>
+  </g>
+  <circle cx="1390" cy="330" r="151" fill="none" stroke="#f0c2a8" stroke-opacity=".25" stroke-width="2"/>
+
+  <!-- облака -->
+  <g filter="url(#blur18)">
+    <path d="M1020 380c80-30 190-20 290 0s210 10 330-20 220-10 290 15c-90 40-230 50-360 45s-260-20-360-15-150 0-190-25z" fill="#120b0f" opacity=".85"/>
+    <path d="M1150 250c60-18 150-14 230-4s160 2 230-14c-50 30-140 40-230 36s-170-8-230-18z" fill="#160d12" opacity=".6"/>
+    <path d="M200 220c140-40 300-30 440-10s260 6 360-20c-80 50-240 70-390 60s-300-20-410-30z" fill="#1c1016" opacity=".7"/>
+  </g>
+  <path d="M1080 372c90-20 200-12 300 4s200 6 300-14" fill="none" stroke="#c4574f" stroke-opacity=".22" stroke-width="2" filter="url(#blur6)"/>
+
+  <!-- вороны -->
+  <g fill="#0b080b">
+    <path d="M1180 250l14-8 8 4 8-4 14 8-12-2-10 6-10-6z"/>
+    <path d="M1250 290l10-6 6 3 6-3 10 6-9-1-7 4-7-4z"/>
+    <path d="M1560 420l9-5 5 2 5-2 9 5-8-1-6 3-6-3z"/>
+    <path d="M1110 320l8-5 5 2 5-2 8 5-7-1-6 3-6-3z"/>
+  </g>
+
+  <!-- дальние горы -->
+  <path d="M0 700 L90 640 L170 668 L280 560 L360 610 L470 520 L560 590 L650 540 L760 630 L880 560 L990 640 L1100 590 L1220 660 L1340 600 L1470 650 L1600 560 L1720 620 L1840 570 L1920 600 V1080 H0Z" fill="url(#farMt)"/>
+  <path d="M280 560 L360 610 M470 520 L560 590 M1600 560 L1720 620 M880 560 L990 640 M1340 600 L1470 650" stroke="#c85a5a" stroke-opacity=".18" stroke-width="2" fill="none"/>
+  <path d="M470 520 L500 548 L484 545 L470 565 L452 546Z M280 560 L304 580 L290 579 L278 596 L262 578Z M1600 560 L1626 582 L1610 581 L1598 598 L1582 580Z" fill="#c9b3a5" opacity=".12"/>
+
+  <!-- дальний туман -->
+  <rect x="0" y="600" width="1920" height="200" fill="url(#fogG)" filter="url(#blur40)"/>
+
+  <!-- сторожевая башня на западе -->
+  <g fill="#170f13">
+    <path d="M430 610 L438 540 L432 540 L432 524 L440 524 L440 530 L447 530 L447 524 L455 524 L455 530 L462 530 L462 524 L470 524 L470 540 L464 540 L472 610Z"/>
+    <path d="M430 524 L451 488 L472 524Z"/>
+  </g>
+  <rect x="448" y="552" width="4" height="8" fill="#e0a066" opacity=".7" filter="url(#glow)"/>
+
+  <!-- средние горы -->
+  <path d="M0 800 L110 730 L230 765 L350 680 L460 735 L580 690 L700 760 L820 720 L930 780 L1010 750 V1080 H0Z" fill="url(#midMt)"/>
+  <path d="M110 730 L230 765 M350 680 L460 735 M580 690 L700 760" stroke="#b14c55" stroke-opacity=".14" stroke-width="2" fill="none"/>
+
+  <!-- скала цитадели -->
+  <path d="M960 1080 L1000 880 L1040 800 L1060 760 L1090 720 L1110 690 L1140 676 L1780 676 L1810 700 L1850 760 L1890 840 L1920 900 V1080Z" fill="url(#cliff)"/>
+  <g fill="#1d1418" opacity=".5">
+    <path d="M1040 800 L1090 720 L1120 760 L1080 860Z"/>
+    <path d="M1180 690 L1260 690 L1230 780 L1170 760Z"/>
+    <path d="M1700 690 L1780 676 L1830 760 L1760 800Z"/>
+    <path d="M1420 690 L1520 690 L1480 790 L1440 760Z"/>
+    <path d="M1300 760 L1360 720 L1380 840 L1320 880Z"/>
+  </g>
+  <path d="M1000 880 L1040 800 L1060 760 L1090 720 L1110 690 L1140 676 M1780 676 L1810 700 L1850 760" fill="none" stroke="#c75a5c" stroke-opacity=".3" stroke-width="2"/>
+
+  <!-- мост с арками -->
+  <g fill="#0b090c">
+    <path d="M820 760 H1110 V790 H820Z"/>
+    <path d="M840 790 H880 V900 a40 40 0 0 1 60 0 V790 H990 V900 a40 40 0 0 1 60 0 V790 H1090 V960 H840Z"/>
+  </g>
+  <path d="M820 760 H1110" stroke="#c75a5c" stroke-opacity=".3" stroke-width="2"/>
+
+  <!-- цитадель: подсветка контура -->
+  <g id="citadel-rim" fill="none" stroke="#d0605e" stroke-opacity=".38" stroke-width="3" stroke-linejoin="round">
+    <path d="M1360 680 V380 H1350 V362 H1366 V372 H1380 V362 H1400 V372 H1414 V362 H1430 V380 H1420 V680"/>
+    <path d="M1346 362 L1390 150 L1434 362"/>
+    <path d="M1210 680 V470 H1270 V680 M1202 470 L1240 360 L1278 470"/>
+    <path d="M1510 680 V440 H1572 V680 M1502 440 L1541 330 L1580 440"/>
+    <path d="M1110 680 V560 H1150 V680 M1104 560 L1130 490 L1156 560"/>
+    <path d="M1640 680 V530 H1676 V680 M1634 530 L1658 470 L1682 530"/>
+  </g>
+
+  <!-- цитадель -->
+  <g fill="url(#castleG)">
+    <!-- куртина -->
+    <rect x="1100" y="612" width="680" height="70"/>
+    <rect x="1100" y="600" width="680" height="12" fill="url(#crenel)"/>
+    <!-- зал слева и справа -->
+    <path d="M1270 680 V540 L1315 500 L1360 540 V680Z"/>
+    <path d="M1420 680 V530 L1465 488 L1510 530 V680Z"/>
+    <!-- донжон и шпиль -->
+    <path d="M1360 680 V380 H1350 V362 H1366 V372 H1380 V362 H1400 V372 H1414 V362 H1430 V380 H1420 V680Z"/>
+    <path d="M1346 362 L1390 150 L1434 362Z"/>
+    <path d="M1388 150 V112 H1392 V150Z M1380 126 H1400 V130 H1380Z"/>
+    <path d="M1366 330 L1356 300 L1366 300Z M1414 330 L1424 300 L1414 300Z"/>
+    <!-- западная башня -->
+    <path d="M1210 680 V470 H1270 V680Z"/>
+    <path d="M1202 470 L1240 360 L1278 470Z"/>
+    <path d="M1239 360 V336 H1241 V360Z"/>
+    <!-- восточная башня -->
+    <path d="M1510 680 V440 H1572 V680Z"/>
+    <path d="M1502 440 L1541 330 L1580 440Z"/>
+    <path d="M1540 330 V304 H1542 V330Z"/>
+    <!-- малые башни -->
+    <path d="M1110 680 V560 H1150 V680Z M1104 560 L1130 490 L1156 560Z"/>
+    <path d="M1640 680 V530 H1676 V680Z M1634 530 L1658 470 L1682 530Z"/>
+    <path d="M1730 680 V590 H1756 V680Z M1726 590 L1743 552 L1760 590Z"/>
+    <!-- контрфорсы -->
+    <path d="M1286 680 L1296 600 L1300 600 L1300 680Z M1330 680 L1340 600 L1344 600 L1344 680Z M1440 680 L1450 596 L1454 596 L1454 680Z M1484 680 L1494 596 L1498 596 L1498 680Z"/>
+  </g>
+  <rect x="1100" y="560" width="680" height="122" fill="url(#baseGlow)" style="mix-blend-mode:screen"/>
+  <!-- каменная фактура -->
+  <g stroke="#2a1d22" stroke-width="1" opacity=".7">
+    <path d="M1362 420 H1418 M1362 470 H1418 M1362 520 H1418 M1362 570 H1418 M1212 520 H1268 M1212 580 H1268 M1512 490 H1570 M1512 560 H1570"/>
+  </g>
+  <!-- окна -->
+  <g fill="#e6a468" filter="url(#glow)">
+    <path d="M1380 420 v-14 a5 5 0 0 1 10 0 v14z" opacity=".95"/>
+    <path d="M1394 420 v-14 a5 5 0 0 1 10 0 v14z" opacity=".95"/>
+    <path d="M1386 500 v-18 a6 6 0 0 1 12 0 v18z" opacity=".75"/>
+    <path d="M1235 530 v-12 a4 4 0 0 1 8 0 v12z" opacity=".85"/>
+    <path d="M1535 500 v-12 a4 4 0 0 1 8 0 v12z" opacity=".85"/>
+    <path d="M1548 580 v-10 a4 4 0 0 1 8 0 v10z" opacity=".5"/>
+    <path d="M1300 600 v-26 a7 7 0 0 1 14 0 v26z" opacity=".55"/>
+    <path d="M1458 596 v-26 a7 7 0 0 1 14 0 v26z" opacity=".6"/>
+    <rect x="1126" y="600" width="4" height="9" opacity=".6"/>
+    <rect x="1655" y="575" width="4" height="9" opacity=".65"/>
+    <rect x="1180" y="640" width="4" height="8" opacity=".45"/>
+    <rect x="1600" y="640" width="4" height="8" opacity=".5"/>
+    <rect x="1700" y="640" width="4" height="8" opacity=".4"/>
+  </g>
+  <!-- знамёна -->
+  <g fill="#6f2230">
+    <path d="M1392 128 h36 v74 l-18 -14 l-18 14z"/>
+    <path d="M1241 338 h20 v44 l-10 -8 l-10 8z" opacity=".9"/>
+    <path d="M1542 306 h20 v44 l-10 -8 l-10 8z" opacity=".9"/>
+    <path d="M1290 612 h18 v58 l-9 -8 l-9 8z" opacity=".85"/>
+    <path d="M1470 612 h18 v58 l-9 -8 l-9 8z" opacity=".85"/>
+  </g>
+  <path d="M1392 128 h36" stroke="#e0b49a" stroke-opacity=".35" stroke-width="2"/>
+
+  <!-- ближний туман -->
+  <g filter="url(#blur40)">
+    <ellipse cx="1200" cy="800" rx="520" ry="60" fill="#5d2430" opacity=".55"/>
+    <ellipse cx="520" cy="860" rx="600" ry="70" fill="#3c1a22" opacity=".6"/>
+    <ellipse cx="1650" cy="880" rx="420" ry="60" fill="#4a1d27" opacity=".5"/>
+  </g>
+
+  <!-- передний план: скалы и мёртвые деревья -->
+  <path d="M0 960 Q220 900 420 930 T820 920 T1240 950 T1920 925 V1080 H0Z" fill="#070608"/>
+  <path d="M0 1000 L60 940 L110 975 L170 930 L230 990 L0 1080Z" fill="#0a080a"/>
+  <g stroke="#070608" stroke-linecap="round" fill="none">
+    <path d="M150 940 C146 860 160 800 140 720" stroke-width="10"/>
+    <path d="M144 800 C120 770 100 760 76 720" stroke-width="5"/>
+    <path d="M148 760 C176 730 196 700 204 660" stroke-width="5"/>
+    <path d="M141 730 C130 700 128 680 112 650" stroke-width="3"/>
+    <path d="M90 740 L60 720 M196 690 L224 676 M82 728 L70 700" stroke-width="2.5"/>
+    <path d="M1830 930 C1834 870 1824 820 1840 760" stroke-width="8"/>
+    <path d="M1834 830 C1860 800 1880 790 1900 760" stroke-width="4"/>
+    <path d="M1830 800 C1808 780 1796 760 1790 730" stroke-width="3.5"/>
+  </g>
+
+  <!-- пепел -->
+  <g fill="#e0846f">
+    <circle cx="1020" cy="560" r="1.6" opacity=".5"/><circle cx="1180" cy="470" r="1.2" opacity=".4"/>
+    <circle cx="1620" cy="720" r="1.8" opacity=".45"/><circle cx="1500" cy="780" r="1.2" opacity=".35"/>
+    <circle cx="880" cy="680" r="1.3" opacity=".35"/><circle cx="1760" cy="520" r="1.4" opacity=".4"/>
+    <circle cx="1300" cy="860" r="1.6" opacity=".35"/><circle cx="1080" cy="900" r="1.2" opacity=".3"/>
+  </g>
+
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+  <rect width="1920" height="1080" filter="url(#grain)"/>
+</svg>
